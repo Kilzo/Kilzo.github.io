@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 000000000000000000000000000
 
 You can use the [editor on GitHub](https://github.com/Kilzo/Kilzo.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
