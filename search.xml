@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>关于搭建Hexo博客的初级教程</title>
+      <link href="/2021/07/28/%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/"/>
+      <url>/2021/07/28/%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="关于搭建Hexo博客的初级教程"><a href="#关于搭建Hexo博客的初级教程" class="headerlink" title="关于搭建Hexo博客的初级教程"></a>关于搭建Hexo博客的初级教程</h1><blockquote><p>主要是给不太熟练的自己未来某一天崩了重新做blog的教程（当然也会尽量让小白看懂）</p></blockquote><p>这里是通过使用<strong>GitHub</strong>托管搭建的<strong>Hexo</strong>博客。如果你想要自己的域名比如：<code>www.XXXXX.com</code>什么的需要前往阿里云或者腾讯云注册，当然，你有<strong>其他渠道</strong>也可以注册。这里仅以<strong>阿里云</strong>为例。或者，你暂时只是想玩一玩，那么可以利用GitHub提供的github.io网站。</p><hr><p><strong>注意</strong>：本篇幅使用的是next主题，想要看优化什么的可以关掉了（还有这是window的安装教程，不是mac）</p><hr><h2 id="首先是准备工作"><a href="#首先是准备工作" class="headerlink" title="首先是准备工作"></a>首先是准备工作</h2><p>Git 和 node.js</p><h2 id="下载Git"><a href="#下载Git" class="headerlink" title="下载Git"></a>下载Git</h2><p><a href="https://git-scm.com/">Git</a> </p><img src="/2021/07/28/%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/Git.jpg" alt="Git" style="zoom: 67%;" loading="lazy"><p>首先进入Git官网下载符合你系统的版本。</p><p>下载完成后直接点击安装，想要更改安装位置就更改位置，由于都是干这行的，这里不多赘述。剩下默认安装就可以了。</p><h2 id="下载Node-js"><a href="#下载Node-js" class="headerlink" title="下载Node.js"></a>下载Node.js</h2><p><a href="https://nodejs.org/zh-cn/">下载｜ Node.js</a></p><img src="/2021/07/28/%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/Node.js.jpg" alt="Node.js" style="zoom:80%;" loading="lazy"><p>建议下载长期支持版本。</p><p>同样，除了你想要更改的安装位置，其他默认即可。</p><p>然后，我们敲击键盘上的<code>win + R</code>键并输入cmd打开终端。(这里特指<code>win mac</code>太穷买不起)</p><p>在终端输入<code>npm -v</code> 回车,显示 版本号,否则就是安装失败,重头再来.(我没失败过,所以这里没有失败经验)</p><p>又输入<code>node -v</code>,同上.</p><p>如果两者都显示出版本号,则安装成功,我们进入下一步.</p><h2 id="注册你的Github账号"><a href="#注册你的Github账号" class="headerlink" title="注册你的Github账号"></a>注册你的Github账号</h2><blockquote><p>emmmm,应该都有GitHub账号吧,有的直接跳过进入下一步好了.(这里还是不写了,一般来说到大学了英文水平不至于这么差吧,再不然就用翻译工具吧.再不然互联网搜索注册方法….)</p></blockquote><p>登录 GitHub。</p><p>点击右上角的 <code>+</code> -&gt; <code>New repository</code> 新建仓库。</p><p>仓库名称务必为 <code>你的用户名.github.io</code>，用户名是英文，大小写无所谓，但建议统一小写。</p><p>点击 <code>Create repository</code>。</p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在终端中输入以下命令：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>此时，请先通过 <code>cd</code> 进入你本地电脑打算存储网站代码的文件夹目录。（或者右键文件夹 Git Bash Here）,当然也可以手动进入,再文件夹里面右键Git Bush就好了.</p><p>接下来输入：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 你的名字.github.io  <span class="comment">#初始化</span></span><br></pre></td></tr></table></figure><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入你的博客文件夹</span></span><br><span class="line"><span class="built_in">cd</span> 你的名字.github.io</span><br><span class="line"><span class="comment"># 默认安装所有 `package.json` 文件中提到的包</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># 你也可以缩写成 hexo s</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><p><code>server</code> 代表开启本地的 Hexo 服务器，这时你就可以打开浏览器，在地址栏中输入 <code>localhost:4000</code> 就可以看到本地的网页了。</p><p>按 <code>Ctrl + C</code> 中断服务器的运行。</p><p>至此，基础的模版页面便已经搭建好了。</p><h2 id="使用-Hexo-主题"><a href="#使用-Hexo-主题" class="headerlink" title="使用 Hexo 主题"></a>使用 Hexo 主题</h2><p>Hexo 默认提供的是 <a href="https://github.com/hexojs/hexo-theme-landscape">hexo-theme-landscape</a> 主题。<br>默认主题样式简单，功能较少。所以大多数人并不会使用默认主题.</p><h2 id="下载-Hexo-主题"><a href="#下载-Hexo-主题" class="headerlink" title="下载 Hexo 主题"></a>下载 Hexo 主题</h2><p>在你储存博客的文件夹中右键Git bush,输入以下命令。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> 你想要的主题地址</span><br></pre></td></tr></table></figure><h2 id="编辑-Hexo-配置"><a href="#编辑-Hexo-配置" class="headerlink" title="编辑 Hexo 配置"></a>编辑 Hexo 配置</h2><p>在你此前通过 Hexo 初始化生成的文件目录下，会存在一个 <code>_config.yml</code> 文件。</p><p>它是 Hexo 的配置文件，关于各配置选项的意义你可以查看 <a href="https://hexo.io/zh-cn/docs/configuration">配置 | Hexo</a>。</p><p>在 <code>_config.yml</code> 中找到 <code>theme</code> 这个字段，将其后的 <code>landscape</code> 修改为 <code>yun</code>。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">你下载的主题名字,可以在theme文件夹中看到</span></span><br></pre></td></tr></table></figure><p>这时再像此前那般使用 <code>hexo server</code> 重新启动服务器，你就可以看到一个不一样的主题风格的页面了。</p><p>至此,博客搭建初步完成.更多细节请自行百度或者等待我的下一次更新(咕咕…..).</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于hexo博客插入图片显示问题</title>
       <link href="/2021/07/26/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
       <url>/2021/07/26/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
