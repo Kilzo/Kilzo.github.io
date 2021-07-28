@@ -43,18 +43,18 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+#highlight:
+#  enable: false
+#  line_number: false
+  #auto_detect: false
+#  tab_replace: ''
+#  wrap: true
+#  hljs: false
+#prismjs:
+#  enable: false
+#  preprocess: true
+#  line_number: true
+#  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -120,14 +120,14 @@ display:
         show: false      #是否在手机端显示
 
 # 关闭 highlight
-#highlight:
-#    enable: false
-# 启用 prism
-#prismjs:
-#    enable: true
-#    preprocess: true
-#    line_number: false
-#    tab_replace: ""
+highlight:
+    enable: false
+ #启用 prism
+prismjs:
+    enable: true
+    preprocess: true
+    line_number: false
+    tab_replace: ""
 
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
