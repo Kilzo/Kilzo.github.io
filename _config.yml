@@ -121,7 +121,7 @@ display:
 
 # 关闭 highlight
 highlight:
-    enable: false
+    enable: true
  #启用 prism
 prismjs:
     enable: true
