@@ -306,7 +306,7 @@ codeblock:
 #版权
 creative_commons:
   license: by-nc-sa   #设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
-  post: true          #在每篇文章末尾显示
+  post: false          #在每篇文章末尾显示
   language: deed.zh   #设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
   clipboard: false    # 是否在复制文章时，在剪贴板中追加版权信息（默认关闭）
 

@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://example
 #permalink: :year/:month/:day/:title/
 #permalink_defaults:
 pretty_urls:
@@ -131,7 +131,7 @@ prismjs:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
-#url: https://www.yunyoujun.cn
+#url: www.Kilzo.net/Kilzo.github.io
 image: 
     post_asset_folder: true #我只设置了这个，没设置下边两行也好使。
     filter_image:
