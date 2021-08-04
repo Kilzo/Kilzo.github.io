@@ -6,7 +6,7 @@
   <link href="https://www.kilzo.net/atom.xml" rel="self"/>
   
   <link href="https://www.kilzo.net/"/>
-  <updated>2021-08-04T08:20:11.074Z</updated>
+  <updated>2021-08-04T08:27:59.971Z</updated>
   <id>https://www.kilzo.net/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
-    <link href="https://www.kilzo.net/post/9daba997"/>
-    <id>https://www.kilzo.net/post/9daba997</id>
-    <published>2021-08-04T08:20:10.000Z</published>
-    <updated>2021-08-04T08:20:11.074Z</updated>
+    <title>使用hexo-abbrlink解决版权本文链接有中文乱码问题</title>
+    <link href="https://www.kilzo.net/post/3185eecb"/>
+    <id>https://www.kilzo.net/post/3185eecb</id>
+    <published>2021-08-04T08:26:59.000Z</published>
+    <updated>2021-08-04T08:27:59.971Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用hexo-abbrlink解决版权本文链接有中文乱码问题"><a href="#使用hexo-abbrlink解决版权本文链接有中文乱码问题" class="headerlink" title="使用hexo-abbrlink解决版权本文链接有中文乱码问题"></a>使用hexo-abbrlink解决版权本文链接有中文乱码问题</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><pre class="language-C++" data-language="C++"><code class="language-C++">npm install hexo-abbrlink --save</code></pre><h2 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件_config.yml"></a>配置站点配置文件<code>_config.yml</code></h2><pre class="language-C++" data-language="C++"><code class="language-C++">permalink: post&#x2F;:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep: hex    # 进制：dec(default) and hex</code></pre>]]></content>
     
     
       
@@ -33,6 +33,10 @@
     
     
     
+    <category term="hexo" scheme="https://www.kilzo.net/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://www.kilzo.net/tags/hexo/"/>
     
   </entry>
   

@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>测试</title>
-      <link href="/post/9daba997.html"/>
-      <url>/post/9daba997.html</url>
+      <title>使用hexo-abbrlink解决版权本文链接有中文乱码问题</title>
+      <link href="/post/3185eecb.html"/>
+      <url>/post/3185eecb.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用hexo-abbrlink解决版权本文链接有中文乱码问题"><a href="#使用hexo-abbrlink解决版权本文链接有中文乱码问题" class="headerlink" title="使用hexo-abbrlink解决版权本文链接有中文乱码问题"></a>使用hexo-abbrlink解决版权本文链接有中文乱码问题</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><pre class="language-C++" data-language="C++"><code class="language-C++">npm install hexo-abbrlink --save</code></pre><h2 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件_config.yml"></a>配置站点配置文件<code>_config.yml</code></h2><pre class="language-C++" data-language="C++"><code class="language-C++">permalink: post&#x2F;:abbrlink.htmlabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep: hex    # 进制：dec(default) and hex</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
