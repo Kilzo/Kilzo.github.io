@@ -2,7 +2,7 @@
 title: 关于hexo博客插入图片显示问题
 tags: hexo
 categories: hexo
-abbrlink: 54406
+abbrlink: 8172e5bf
 ---
 # 关于hexo博客插入图片显示问题
 

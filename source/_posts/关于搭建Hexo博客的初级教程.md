@@ -2,7 +2,7 @@
 title: 关于搭建Hexo博客的初级教程
 tags: hexo
 categories: hexo
-abbrlink: 54406
+abbrlink: 816f8e7d
 ---
 
 # 关于搭建Hexo博客的初级教程

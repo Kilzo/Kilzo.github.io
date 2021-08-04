@@ -2,8 +2,7 @@
 title: 关于hexo的备份
 tags: hexo
 categories: hexo
-abbrlink: 54406
-date: 2021-07-26
+abbrlink: 20c8899f
 ---
 
 

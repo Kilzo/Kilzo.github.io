@@ -13,11 +13,16 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://example
+#url: https://Kilzo.github.io/Kilzo.github.io
 #permalink: :year/:month/:day/:title/
 #permalink_defaults:
+permalink: post/:abbrlink/
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+
 pretty_urls:
-  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -131,7 +136,7 @@ prismjs:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
-#url: www.Kilzo.net/Kilzo.github.io
+url: https://www.Kilzo.net
 image: 
     post_asset_folder: true #我只设置了这个，没设置下边两行也好使。
     filter_image:
