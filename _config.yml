@@ -126,14 +126,20 @@ display:
 
 # 关闭 highlight
 highlight:
-    enable: true
+    enable: false
  #启用 prism
 prismjs:
     enable: true
-    preprocess: true
+    preprocess: false
     line_number: false
     tab_replace: ""
-
+codeblock:
+  copy_btn: true
+#  prismjs:
+#    light: prism-material-light
+#    dark: prism-duotone-sea
+#marked:
+#  langPrefix: line-numbers language-
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 url: https://www.Kilzo.net
