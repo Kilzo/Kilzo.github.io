@@ -143,12 +143,19 @@ font:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 
 #图片背景（透明度等
+#bg_image:
+#  enable: true
+#  light: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+#  dark: /images/background.jpg                                 #暗色背景
+#  blur: 0px # 设置背景模糊程度
+#  opacity: 9.99
+
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
-  dark: /images/background.jpg                                 #暗色背景
-  blur: 0px # 设置背景模糊程度
-  opacity: 9.99
+  url: /images/background-light.jpg # recomend image related to your mode
+  dark: /images/background.jpg 
+  # blur: 30px
+  opacity: 1
 
 #搜索背景
 search:
