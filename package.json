@@ -6,7 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "dev": "export NODE_ENV=development && hexo s"
   },
   "hexo": {
     "version": "5.4.0"
@@ -16,6 +17,7 @@
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-asset-image": "github:7ym0n/hexo-asset-image",
+    "hexo-cdn-jsdelivr": "^0.0.9",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-image": "^1.2.3",
     "hexo-generator-archive": "^1.0.0",

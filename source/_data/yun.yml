@@ -1,6 +1,7 @@
 avatar:
   enable: true
-  url: /images/avatar.jpg
+  #url: /images/avatar.jpg
+  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/avatar/avatar.jpg
   rounded: true
   opacity: 1
   mickey_mouse: false
@@ -152,8 +153,10 @@ font:
 
 bg_image:
   enable: true
-  url: /images/background-light.jpg # recomend image related to your mode
-  dark: /images/background.jpg 
+  #url: /images/background-light.jpg # recomend image related to your mode
+  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background-light.jpg
+  #dark: /images/background.jpg 
+  dark: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background.jpg
   # blur: 30px
   opacity: 1
 
@@ -422,7 +425,7 @@ wordcount:
 # custom your assets in head
 head:
   cdn:
-    pre: ""
+    pre: https://cdn.jsdelivr.net/gh/Kilzo/Kilzo.github.io@latest
     css:
     js:
       base:
