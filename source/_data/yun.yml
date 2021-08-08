@@ -1,7 +1,7 @@
 avatar:
   enable: true
   #url: /images/avatar.jpg
-  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/avatar/avatar.jpg
+  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/avatar/avatar.jpg  #这回没改错了吧
   rounded: true
   opacity: 1
   mickey_mouse: false
