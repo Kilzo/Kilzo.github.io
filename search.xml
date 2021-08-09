@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>yun主题的页面背景透明和左侧菜单栏透明修改</title>
+      <link href="/post/cf1abab9/"/>
+      <url>/post/cf1abab9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>今天是本人少数肝博客更新肝一下午的一天，这个主题真的是简直毫无教程。全程自己摸索。不过也学到好多东西。</p><p>本文对所有主题（Hexo）生效的一点估计就在开头的控制台介绍了。</p></blockquote><p>在开始之前，我bing查询了一些大伙怎么修改文章透明，发现没一个对的上的，（其实我也没一个个试），偶然间看到了网页F12进入开发者模式（也就是大家俗称的控制台），在元素中可以看到每一个模块在哪个文件。更加坚定了自己手动修改的目的。于是乎，下面开始了。（这里是全透明，不含透明百分数，想要百分比透明的可以跳过了。)</p><blockquote><p>首先先说说像我这样的小白怎么整这个控制台。</p></blockquote><h1 id="首先打开你的博客-网站目录"><a href="#首先打开你的博客-网站目录" class="headerlink" title="首先打开你的博客/网站目录"></a>首先打开你的博客/网站目录</h1><p>在你的博客目录右键打开Git Bash Here,输入三连，<code>hexo clean</code> 、<code>hexo g</code>、 <code>hexo s</code>打开你的博客，然后键盘按F12进入控制台，当然你也可以在浏览器中找找控制台，具体打开方式可以百度，这里不多说。大概长这样：</p><img src="/post/cf1abab9/1.png" alt="1" loading="lazy"><p>然后我们打开元素面板，如上图最上面菜单栏所示</p><h1 id="接下来就可以根据这里面的代码定位你要修改的地方"><a href="#接下来就可以根据这里面的代码定位你要修改的地方" class="headerlink" title="接下来就可以根据这里面的代码定位你要修改的地方"></a>接下来就可以根据这里面的代码定位你要修改的地方</h1><img src="/post/cf1abab9/2.png" alt="2" loading="lazy"><p>如图中高亮区域</p><p>接下来一步步细化你所需要修改的区域</p><img src="/post/cf1abab9/3.png" alt="3" loading="lazy"><img src="/post/cf1abab9/4.png" alt="4" loading="lazy"><p>一直到你想要的区域不能再细分为止。我直接贴最终结果了</p><img src="/post/cf1abab9/5.png" alt="5" loading="lazy"><p>放大结果，得出如下结论</p><img src="/post/cf1abab9/6.png" alt="6" loading="lazy"><p>在这个post.styl文件中的post-block函数中，以下开始正式修改</p><hr><h1 id="首先是文章页面的透明"><a href="#首先是文章页面的透明" class="headerlink" title="首先是文章页面的透明"></a>首先是文章页面的透明</h1><p>打开你的博客目录中的<code>themes\yun\source\css\_layout</code>里面的post.styl文件，马上就能找到如下代码并修改：（按照下图修改）</p><pre class="language-stylus" data-language="stylus"><code class="language-stylus">.post &#123;  &amp;-block &#123;    color: var(--hty-text-color);    &#x2F;&#x2F;opacity: 0.4   &#x2F;&#x2F;文章背景透明度（总的，大bug）一般不用这个，用下面那个（这个是我自己加的）    margin: 0 1rem;    padding: 1rem;    &#x2F;&#x2F;background-color: var(--post-block-bg-color);   &#x2F;&#x2F;改这个透明    background-color: &quot;&quot;;&#x2F;&#x2F;这样就表示透明了，至于透明度，我还没发现怎么改，因为上面那个一改就基本字也是透明的了    +mobile() &#123;      margin: 0;      padding-top: 2.5rem;    &#125;  &#125;</code></pre><p>此时改完保存你可以三连看看本地效果如何。</p><h1 id="然后是左边菜单栏的修改"><a href="#然后是左边菜单栏的修改" class="headerlink" title="然后是左边菜单栏的修改"></a>然后是左边菜单栏的修改</h1><p>重复上述控制台步骤步骤找到你需要的文件，我这里是<code>themes\yun\source\css\_components\sidebar</code>中的sidebar.styl，同样，找到下述代码并修改:</p><pre class="language-stylus" data-language="stylus"><code class="language-stylus">.sidebar &#123;  position: fixed;  overflow-y: auto;  top: 0;  bottom: 0;  left: 0;  width: 20rem;  background-color: &#39;&#39;; &#x2F;&#x2F;左边栏透明  background-image: &#39;&#39;; &#x2F;&#x2F;这个是你插入的图片取消，当然也可以不插入图片，在你插入图片的文件中取消而不是在这&#x2F;&#x2F;background-image: url($sidebar-bg-image);  background-size: contain;  background-repeat: no-repeat;  background-position: convert($sidebar-bg-position);  text-align: center;  z-index: $sidebar-z-index;  the-transition();  the-box-shadow();  +mobile() &#123;    left: -20rem;    transform: translateX(0);  &#125;</code></pre><p>到目前为止，这里只是亮色主题下的左边菜单栏修改。由于作者大大的骚操作，他把暗色主题在设置时候重写了这个函数，我们需要到暗色主题下修改。我们到</p><p><code>\themes\yun\source\css\_global</code>下打开dark.styl。找到如下代码并修改：</p><pre class="language-stylus" data-language="stylus"><code class="language-stylus">&#x2F;&#x2F; sidebar$sidebar-bg-image &#x3D; hexo-config(&#39;sidebar.dark_bg_image&#39;);.sidebar &#123;  &#x2F;&#x2F;background-color: rgba($dark-primary-color, 0.95);   &#x2F;&#x2F;这里是被重写的结果，亮色改变要在_components中的sidebar中sidebar.styl  background-image:&#39;&#39;;&#x2F;&#x2F;同样的图片修改  if ($sidebar-bg-image) &#123;    background-image: url($sidebar-bg-image);  &#125; else &#123;    background-image: none;  &#125;&#125;</code></pre><h1 id="然后就是评论板块"><a href="#然后就是评论板块" class="headerlink" title="然后就是评论板块"></a>然后就是评论板块</h1><p>打开<code>themes\yun\source\css\_widget</code>中的comment.styl,找到并修改如下代码：</p><pre class="language-stylus" data-language="stylus"><code class="language-stylus">#comment &#123;  margin: 0 1rem;  padding: 1rem;  &#x2F;&#x2F;background-color: var(--post-block-bg-color);  background-color: &#39;&#39;;  &#x2F;&#x2F;评论板块透明  +mobile() &#123;    margin: 0;  &#125;&#125;</code></pre><h1 id="OK-三连看你的修改效果，大功告成"><a href="#OK-三连看你的修改效果，大功告成" class="headerlink" title="OK,三连看你的修改效果，大功告成"></a>OK,三连看你的修改效果，大功告成</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于hexo yun主题(本主题)代码高亮问题的解决</title>
       <link href="/post/cbd6015b/"/>
       <url>/post/cbd6015b/</url>
