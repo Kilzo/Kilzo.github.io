@@ -29,7 +29,8 @@ $banner-char-bg-color = black;
 $sidebar-bg-image = hexo-config('sidebar.dark_bg_image');
 
 .sidebar {
-  background-color: rgba($dark-primary-color, 0.95);
+  //background-color: rgba($dark-primary-color, 0.95);   //这里是被重写的结果，亮色改变要在_components中的sidebar中sidebar.styl
+  background-image:'';
 
   if ($sidebar-bg-image) {
     background-image: url($sidebar-bg-image);

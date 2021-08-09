@@ -1,9 +1,11 @@
 .post {
   &-block {
     color: var(--hty-text-color);
+    //opacity: 0.4   //文章背景透明度（总的，大bug）一般不用这个，用下面那个
     margin: 0 1rem;
     padding: 1rem;
-    background-color: var(--post-block-bg-color);
+    //background-color: var(--post-block-bg-color);   //改这个透明
+    background-color: "";
 
     +mobile() {
       margin: 0;
@@ -92,6 +94,7 @@
   padding: 0.5rem 1rem;
   border-left: 4px solid #ff5252;
   background-color: var(--hty-bg-color);
+  opacity: 0.5
   list-style: none;
   word-break: break-all;
   position: relative;
