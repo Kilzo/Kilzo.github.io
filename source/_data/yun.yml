@@ -154,9 +154,9 @@ font:
 bg_image:
   enable: true
   #url: /images/background-light.jpg # recomend image related to your mode
-  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background-light.jpg
+  url: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.2/background/background-light.jpg
   #dark: /images/background.jpg 
-  dark: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background.jpg
+  dark: https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.2/background/background.jpg
   # blur: 30px
   opacity: 1
 
