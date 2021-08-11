@@ -221,9 +221,9 @@ menu:
     - type: tags
       path: /tags/
       icon: icon-price-tag-3-line
-    # - path: https://www.yunyoujun.cn
-    #   icon: icon-cloud-line
-    #   count: 你猜
+    #- path: /playlist/
+      #icon: icon-disc-line
+      #count: 你猜
   custom:
     title: 文档              
     path: https://www.kilzo.net         #暂时不知道怎么用
@@ -440,32 +440,32 @@ katex:
   global: false
 
 # plugins
-aplayer:
-  global: false
-  meting: true
+#aplayer:
+  #global: true
+  #meting: true
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
-  widget:
-    enable: false
-    autoplay: false
+  #widget:
+    #enable: true
+    #autoplay: false
     # theme: "#2980b9"
-    loop: all
-    order: list
-    preload: auto
-    volume: 0.7
-    mutex: true
-    lrcType: 0
-    listFolded: false
-    listMaxHeight: 340px
-    audio:
-      - name: 星宿计时
-        artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
-    meting:
-      enable: true
-      id: 308168565
-      server: netease
-      type: playlist
+    #loop: all
+    #order: list
+    #preload: auto
+    #volume: 0.7
+    #mutex: true
+    #lrcType: 0
+    #listFolded: false
+    #listMaxHeight: 340px
+    #audio:
+      #- name: 星宿计时
+        #artist: 杉田朗/洛天依
+        #url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        #cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+    #meting:
+      #enable: true
+      #id: 308168565
+      #server: netease
+      #type: playlist
 
 # special
 mourn:

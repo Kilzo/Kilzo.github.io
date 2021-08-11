@@ -7,6 +7,8 @@ date: 2021-08-09 20:07:24
 categories:
 ---
 
+{% aplayer "她的睫毛" "周杰伦" "http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3"  "http://home.ustc.edu.cn/~mmmwhy/jay.jpg" "autoplay=false" %}
+
 > 今天是本人少数肝博客更新肝一下午的一天，这个主题真的是简直毫无教程。全程自己摸索。不过也学到好多东西。
 >
 > 本文对所有主题（Hexo）生效的一点估计就在开头的控制台介绍了。
