@@ -8,7 +8,7 @@ avatar:
   status:
     enable: true
     emoji: 😭
-    message: 添加功能中
+    message: 学习技术中
 
 # Social Links.
 social:
@@ -121,8 +121,8 @@ banner:
 
 #公告
 notice:
-  enable: false
-  content: Hello.
+  enable: true
+  content: 学习新东西先了，暂时不更新新东西。或者说想到有什么好添加的再改改。
 
 #UI
 # 可选 light | dark | auto | time
