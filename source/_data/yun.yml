@@ -412,11 +412,15 @@ github_discussions:
 #搜索引擎
 # search
 engine_search:
-  enable: true
+  enable: false
   href: "https://www.google.com/search?q=site:"
   # href: "https://www.baidu.com/s?wd=site:"
   # href: "https://www.bing.com/search?q=site:"
   domain: kilzo.net
+#本地搜索引擎
+local_search:
+  enable: true
+  src: /js/search/local-search.js
 
 #字数统计
 wordcount:
