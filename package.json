@@ -16,6 +16,7 @@
     "favicon": "^0.0.2",
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-admin": "^2.3.0",
     "hexo-asset-image": "github:7ym0n/hexo-asset-image",
     "hexo-cdn-jsdelivr": "^0.0.9",
     "hexo-deployer-git": "^3.0.0",
