@@ -452,7 +452,7 @@ mourn:
 
 #文章浏览量
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: 933YC5JPihaVOTuEtrnUIMOB-gzGzoHsz
   app_key: f2WqeO9QhkB9gt353noCthQY
   # Required for apps from CN region
