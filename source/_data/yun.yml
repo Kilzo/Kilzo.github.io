@@ -450,14 +450,6 @@ mourn:
     - "4-4"
     - "9-18"
 
-#文章浏览量
-#leancloud_visitors:
-  #enable: false
-  #app_id: 933YC5JPihaVOTuEtrnUIMOB-gzGzoHsz
-  #app_key: f2WqeO9QhkB9gt353noCthQY
-  # Required for apps from CN region
-  #server_url: https://933yc5jp.lc-cn-n1-shared.com
-
 # 文章浏览量
 leancloud_visitors:
   enable: true
@@ -465,3 +457,29 @@ leancloud_visitors:
   app_key: GofKMKSit0pqsDLtSrujLtJ2
   # Required for apps from CN region
   server_url: leancloud.kilzo.net
+
+# 评论系统
+valine:
+  enable: true
+  appId: BdGr8VvyUhABotx9v6QL5YOb-MdYXbMMI
+  appKey: GofKMKSit0pqsDLtSrujLtJ2
+  placeholder: Just go go # comment box placeholder
+  avatar: # gravatar style
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10 # pagination size
+   #lang: zh-CN
+   #visitor: false
+   #highlight: true
+   #recordIP: false
+   #serverURLs:
+   #Emoji See: https://valine.js.org/emoji.html
+   #emojiCDN: //i0.hdslb.com/bfs/emote/
+   #emojiMaps:
+     #tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+   #enableQQ: false
+   #requiredFields:
+    # - nick
+    # - mail
