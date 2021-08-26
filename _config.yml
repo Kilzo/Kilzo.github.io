@@ -192,5 +192,3 @@ jsdelivr_cdn:
   #asset_dirs:
   #  - [存放静态资源的目录]
   #  - [另一个存放静态资源的目录]
-
-#  valine: https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
