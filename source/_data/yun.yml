@@ -445,7 +445,7 @@ katex:
 
 # special
 mourn:
-  enable: false
+  enable: true
   days:
     - "4-4"
     - "9-18"
